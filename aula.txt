@@ -1,0 +1,14 @@
+Aula 18
+
+instalando pacotes aula 19
+go mod tidy, mantem o go mod limpo removendo aqueles que não estão sendo ultilizados.
+podemo digitar o pacote e depois dar um tidy para baixar automaticamente.
+
+Aula 19
+
+Aula 27 - Compilando projetos
+go build na pasta do arquivo onde é criado o arquivo binario
+go build main.go
+ls -lah para ver os arquivos
+./main para rodar o arquivo compilado
+GOOS= windows go build main.go crinado uma versao do binario ara um sistema operacional expecifico
