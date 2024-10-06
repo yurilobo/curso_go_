@@ -1,0 +1,8 @@
+Aula 18
+
+instalando pacotes aula 19
+go mod tidy, mantem o go mod limpo removendo aqueles que não estão sendo ultilizados.
+podemo digitar o pacote e depois dar um tidy para baixar automaticamente.
+
+Aula 19
+
