@@ -12,3 +12,6 @@ go build main.go
 ls -lah para ver os arquivos
 ./main para rodar o arquivo compilado
 GOOS= windows go build main.go crinado uma versao do binario ara um sistema operacional expecifico
+aula #36
+
+	cat arquivo.txt para abrir  o arquivo
