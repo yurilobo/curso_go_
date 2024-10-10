@@ -15,3 +15,8 @@ GOOS= windows go build main.go crinado uma versao do binario ara um sistema oper
 aula #36
 
 	cat arquivo.txt para abrir  o arquivo
+
+aula 40- -24- busca cep
+
+go run main.go http://viacep.com.br/ws/60426-000/json/
+
