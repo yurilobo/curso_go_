@@ -1,0 +1,4 @@
+Ao tentar exercurar o servidor localmente me deparei com o erro onde não era encontrado a porta 8080
+pensei que poderia ser que tivesse algum banco rodando nela sendo necessario fazer sudo systemctl stop postgresql1
+para limpar, porem não tive resultado então observei que era necessario roda um 
+go run main.go para startar o servidor e so depois fazer o curl localhost:8080
