@@ -6,3 +6,6 @@ go run main.go para startar o servidor e so depois fazer o curl localhost:8080
 
 ao manipular os heders podemos verificar no local host
 cm http://localhost:8080/?cep=60426000
+
+No estudo de ceps é importande que o servidor seja iniciado com 
+go run main.go na pasta do arquivo e depois podemos usar o thunder cliente para simular e receber as requisções
