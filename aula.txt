@@ -20,3 +20,4 @@ aula 40- -24- busca cep
 
 go run main.go http://viacep.com.br/ws/60426-000/json/
 
+na aula de templetes 3  é possível fazer condicional com o uso do arquivos externos
