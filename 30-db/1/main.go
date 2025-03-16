@@ -33,7 +33,7 @@ func main() { //cria conexão com banco de dados
 	if err != nil {
 		panic(err)
 	}
-	product.Price = 150.0
+	product.Price = 1500.0
 	err = updateProduct(db, product)
 	if err != nil {
 		panic(err)
@@ -48,6 +48,11 @@ func main() { //cria conexão com banco de dados
 	// Mudança: Iterando sobre 'products'
 	for _, p := range products {
 		fmt.Printf("Product: %v, possui o preço de %.2f\n", p.Name, p.Price)
+	}
+
+	err = deleteProduct(db, product.ID)
+	if err != nil {
+		panic(err)
 	}
 }
 
@@ -94,4 +99,16 @@ func selecAllProduct(db *sql.DB) ([]Product, error) {
 		products = append(products, p) // Adiciona o produto ao slice 'products'
 	}
 	return products, nil // retorna o slice de produtos
+}
+func deleteProduct(db *sql.DB, id string) error {
+	stmt, err := db.Prepare("DELETE FROM product WHERE id = ?")
+	if err != nil {
+		return err
+	}
+	defer stmt.Close()
+	_, err = stmt.Exec(id)
+	if err != nil {
+		return err
+	}
+	return nil
 }
