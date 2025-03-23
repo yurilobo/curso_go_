@@ -49,9 +49,4 @@ func main() {
 		fmt.Println(p)
 	}
 
-	// //update
-	// db.Model(&product).Update("Price", 1600.0)
-
-	// //delete
-	// db.Delete(&product)
 }
