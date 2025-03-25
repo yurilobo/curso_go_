@@ -7,10 +7,17 @@ import (
 	"gorm.io/gorm"
 )
 
+type Category struct {
+	ID   int `gorm:"primaryKey"`
+	Name string
+}
+
 type Product struct {
-	ID    int `gorm:"primaryKey"`
-	Name  string
-	Price float64
+	ID         int `gorm:"primaryKey"`
+	Name       string
+	Price      float64
+	CategoryID int
+	Category   Category
 	gorm.Model
 }
 
